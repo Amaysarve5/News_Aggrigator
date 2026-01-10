@@ -24,7 +24,7 @@ function Country() {
   useEffect(() => {
     setIsLoading(true);
     setError(null);
-    fetch(`http://localhost:5000/country/${params.iso}?page=${page}&pageSize=${pageSize}`)
+    fetch(`https://news-aggrigator-server.onrender.com/country/${params.iso}?page=${page}&pageSize=${pageSize}`)
       .then((response) => {
         if (response.ok) {
           return response.json();
@@ -99,3 +99,4 @@ function Country() {
 }
 
 export default Country;
+
