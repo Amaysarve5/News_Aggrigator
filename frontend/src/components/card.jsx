@@ -23,7 +23,7 @@ const card = (props) => {
         <b className='title line-clamp-2'>{title}</b>
 
         <div className='distription mt-4 mb-4'>
-          <p className='text-base desc-clamp'>{description ? description : 'No description available'}</p>
+          <p className='text-base'>{description ? description : 'No description available'}</p>
         </div>
 
         <div className='info flex items-center justify-between gap-4'>
@@ -44,5 +44,6 @@ const card = (props) => {
     </div>
   )
 }
+
 
 export default card
